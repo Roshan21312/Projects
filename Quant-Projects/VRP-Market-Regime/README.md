@@ -2,46 +2,30 @@ Variance Risk Premium (VRP) Strategy & Market Regime Classification
 This project explores the Variance Risk Premium (VRP) using historical data from NIFTY 50 and India VIX. The idea was inspired by the research paper "Variance Risk Premium" by Carr and Wu (2009).
 
 🔍 What This Project Covers
-Understanding and calculating VRP using market index and VIX
-
-Exploring how VRP behaves over time
-
-Testing whether VRP can classify market regimes (risk-on vs. risk-off)
-
-Performing basic backtests using VRP-based trading signals
-
-Monte Carlo simulation to test performance robustness
+1) Understanding and calculating VRP using market index and VIX
+2) Exploring how VRP behaves over time
+3) Testing whether VRP can classify market regimes (risk-on vs. risk-off)
+4) Performing basic backtests using VRP-based trading signals
+5) Monte Carlo simulation to test performance robustness
 
 ⚠️ This project applies VRP to the underlying index (NIFTY) directly — not options — due to lack of historical option chain data.
 
 📁 Files Included
-VRP_Strategy.ipynb: Main Jupyter notebook with full code and visualizations
-
-Nifty 50 Historical Data.csv: NIFTY price data
-
-India VIX Historical Data.csv: India VIX data
+ 1) VRP_Strategy.ipynb: Main Jupyter notebook with full code and visualizations
+ 2) Nifty 50 Historical Data.csv: NIFTY price data
+ 3) India VIX Historical Data.csv: India VIX data
 
 ⚙️ Requirements
-Python 3.x
-
-pandas
-
-numpy
-
-matplotlib
-
-yfinance (if fetching live data)
+ a) pandas
+ b) numpy
+ c) matplotlib
 
 📊 Key Plots
-VRP over time (2015–2025)
-
-VIX vs. NIFTY comparison
-
-Distribution of VRP
-
-Strategy performance vs. NIFTY returns
-
-Monte Carlo return distribution
+ a) VRP over time (2015–2025)
+ b) VIX vs. NIFTY comparison
+ c) Distribution of VRP
+ d) Strategy performance vs. NIFTY returns
+ e) Monte Carlo return distribution
 
 📌 Conclusion
 While VRP was helpful in identifying volatility mispricing and fear in the market, it did not produce a robust trading signal when applied to the index directly. However, the insights can still be useful for regime detection or building option strategies.
