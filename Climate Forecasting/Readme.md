@@ -1,13 +1,13 @@
 In this project I have implemented LSTM MODEL on multivariate features to predict nxt temperature based on 13 features provided.
 
-Overview of LSTM model :
-It is a version of RNN which is capable of holding long term memory by utilizing an architecture of Forget Gate,Input Gate,Output Gate.
+Overview of LSTM model :-
 
 LSTM architecture look as following:
 
 <img width="723" height="477" alt="A-Long-short-term-memory-LSTM-unit-architecture" src="https://github.com/user-attachments/assets/d1e51522-003d-4fb6-acf7-dd30eb225da7" />
 
 
+It is a version of RNN which is capable of holding long term memory by utilizing an architecture of Forget Gate,Input Gate,Output Gate.
 
 1) Forget Gate: Determines how much of Long-term memory (Cell state C(t-1)) to keep. It takes new data-point (X(t)) and previous hidden state (h(t-1)) and applies sigmoid function to their linear combination and gets a value between 0-1 which acts as weight for old cell state and gives us f(t)*C(t-1).
 
