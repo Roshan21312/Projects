@@ -3,6 +3,12 @@ In this project I have implemented LSTM MODEL on multivariate features to predic
 Overview of LSTM model :
 It is a version of RNN which is capable of holding long term memory by utilizing an architecture of Forget Gate,Input Gate,Output Gate.
 
+LSTM architecture look as following:
+
+<img width="723" height="477" alt="A-Long-short-term-memory-LSTM-unit-architecture" src="https://github.com/user-attachments/assets/d1e51522-003d-4fb6-acf7-dd30eb225da7" />
+
+
+
 1) Forget Gate: Determines how much of Long-term memory (Cell state C(t-1)) to keep. It takes new data-point (X(t)) and previous hidden state (h(t-1)) and applies sigmoid function to their linear combination and gets a value between 0-1 which acts as weight for old cell state and gives us f(t)*C(t-1).
 
 2) Input Gate: Determine how much of new information to store in cell. It computes a weight(using sigmoid) and applies it to candidate cell state(created using tanh function on linear combination of new information (X(t)) and previous hidden state).Then we combine this weighted short-term memory(candidate cell state) and weighted long-term memory(Updated cell state from Forget Gate). Which gives us C(t) = i(t)*c(t) + f(t)*C(t-1).
