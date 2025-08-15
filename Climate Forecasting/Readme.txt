@@ -1,5 +1,4 @@
-In this particular project I have implemented LSTM MODEL on multivariate features. 
-This project tries to predict next temperature using 13 other features.
+In this project I have implemented LSTM MODEL on multivariate features to predict nxt temperature based on 13 features provided.
 
 Overview of LSTM model :
 It is a version of RNN which is capable of holding long term memory by utilizing an architecture of Forget Gate,Input Gate,Output Gate.
